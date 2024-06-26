@@ -5,6 +5,7 @@ import ToDoItem from "./componets/ToDoItem"
 
 const App = () => {
   const [todos, settodo] = useState([])
+  
   const addTodo =(todo)=>{
     settodo((prev)=>[{id: Date.now(), ...todo}, ...prev])
   }
